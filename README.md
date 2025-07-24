@@ -13,7 +13,7 @@ A simple Spring Boot API to collect and view feedback. Built with Java 17, Sprin
 ---
 
 ##  Endpoints
-
+(Can use postman/curl)
 ###  POST `/feedback`  
 Submit feedback.  
 **Body:**
