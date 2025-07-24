@@ -37,6 +37,17 @@ spring.datasource.url=jdbc:postgresql://your-host:5432/postgres
 spring.datasource.username=your-username
 spring.datasource.password=your-password
 
+```bash
+cURL:curl -X POST http://localhost:8080/feedback \
+ -H "Content-Type: application/json" \
+ -d '{"name":"vignesh", "email":"vignesh@example.com", "comment":"Hiii"}'
 
+##  How to Run the Project
+
+```bash
+# Run with Maven
+mvn spring-boot:run
+```
+
+```bash
 mvn test
-
