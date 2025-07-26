@@ -37,10 +37,14 @@ spring.datasource.url=jdbc:postgresql://your-host:5432/postgres
 spring.datasource.username=your-username
 spring.datasource.password=your-password
 
-```bash
-cURL:curl -X POST http://localhost:8080/feedback \
- -H "Content-Type: application/json" \
- -d '{"name":"vignesh", "email":"vignesh@example.com", "comment":"Hiii"}'
+```bash  --- post request
+curl -X POST http://localhost:8080/feedback \
+  -H "Content-Type: application/json" \
+  -d '{"name":"vignesh", "email":"vignesh@example.com", "message":"vignesh here"}'
+
+// fetch request
+curl http://localhost:8080/feedback
+
 
 ##  How to Run the Project
 
